@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(54, 48, 48);
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color: rgb(173, 154, 149);
+}
+
+.controls {
+    margin: 20px;
+}
+
+button{
+    background-color: rgb(237, 231, 229);
+    color:rgb(78, 69, 56);
+    border: 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: rgb(118, 112, 96);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: rgb(192, 192, 191);
+    border-radius: 8px;
+    width: 180px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card .name{
+    font-weight: bold;
+    margin: 8px 0 4px;
+}
+
+.card .set{
+    color: rgb(18, 16, 16);
+    font-size: 12pt;
+}
+
+#error-message{
+    color: rgb(150, 25, 25);
+    font-weight: bold;
+    margin: 10px;
+}
+
+.loader {
+  border: 8px solid #ccc;
+  border-top: 8px solid rgb(173, 154, 149);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

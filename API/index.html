@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MTG Card Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Magic: The Gathering Card Collection</h1>
+    <p>Click the button for a list of 100 cards!</p>
+
+    <div class="controls">
+        <button id="fetch-button">Fetch 100 Cards!</button>
+        <input type="text" id="search-input" placeholder="Search card by name"/>
+        <button id="search-button"> Search for a card </button>
+    </div>
+
+    <div id="error-message"></div>
+
+    <div id="loader" class="loader" style="display:none;"></div>
+
+    <div id="card-container" class="grid"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
